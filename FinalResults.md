@@ -5,12 +5,12 @@
 The overarching research question is “What are the determinants of IPO underpricing phenomena?” In this competition, your main purpose is to prepare the data for predictive models answering the overarching research question.
 
 - After cleaning and modeling the data in various ways, we have determined the best model to be pipeline 2. This pipeline first uses interquartile ratio, then scales the data on a MinMax Scaler, and finally normalizes the data to reduce skewness. Through feature selection we were able to rank the variables according to their impact on the target variables. After running these features through the evaluation code, the best result were seen in pipeline 2, the results are as follows:
-    Y1:
-        Predictors: Percent of long sentences, Percent of long words, Percent of positive words, Percent                     of negative words.
-        F1 score: .6373
-    Y2:
-        Predictors: Prior Nasdaq 15-day returns, percent of negative words, Share overhang, Up revision,                     Sales.
-        F1 score: .6504
+    - Y1:
+        - Predictors: Percent of long sentences, Percent of long words, Percent of positive words, Percent                     of negative words.
+        - F1 score: .6373
+    - Y2:
+        - Predictors: Prior Nasdaq 15-day returns, percent of negative words, Share overhang, Up revision,                     Sales.
+        - F1 score: .6504
 - As seen in the results, both F1 scores are above .6, which is a good result. All of our pipeline's evaluation codes resulted in a F1 score of .6 or above. Of all 4 evaluations, pipeline 2 had the highest F1 score for both Y1 and Y2, determining it to be the best model.
     
 ### Data Dictionary
